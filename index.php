@@ -1,5 +1,5 @@
 <?php
- include('header.php'); 
+ require('header.php'); 
     echo "<h1><b><u>haisd</u></b></h1>";
     // echo "<script>alert('test')</script>";
     $name = 'Dinesh';
@@ -39,6 +39,17 @@
             }
         }        
     }
+
+    $test = array('dinesh','karthick','aravind','karthick');
+
+    echo "<br><b>".$test[2]."</b><br>";
+    echo count($test);
+
+    for($i=0;$i<count($test);$i++){
+        if($test[$i]=='karthick'){
+            echo "<br>" .$test[$i];
+        }
+    }
 ?>
 
 <html>
@@ -51,6 +62,7 @@
         <input type="text" name="b">
         <input type="submit" name="save" value="Save">
     </form>
+    
     
     </body>
 </html>
